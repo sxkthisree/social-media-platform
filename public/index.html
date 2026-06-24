@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Social Media Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>SocialConnect</h1>
+</header>
+
+<div class="container">
+
+    <div class="profile">
+        <img src="https://i.pravatar.cc/150?img=12" alt="profile">
+        <h2>Sakthi Sree</h2>
+        <p>Full Stack Developer</p>
+    </div>
+
+    <div class="create-post">
+        <h2>Create Post</h2>
+        <input type="text" id="postInput" placeholder="What's on your mind?">
+        <button onclick="createPost()">Post</button>
+    </div>
+
+    <div id="posts">
+
+        <div class="post">
+            <h3>Welcome Post</h3>
+            <p>Welcome to SocialConnect 🚀</p>
+
+            <button onclick="likePost(this)">❤️ Like <span>0</span></button>
+
+            <div class="comment-section">
+                <input type="text" placeholder="Add Comment">
+                <button onclick="addComment(this)">Comment</button>
+                <ul></ul>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
